@@ -1,0 +1,55 @@
+.footer {
+    background-color: $very-dark-blue;
+    padding: 8rem 0;
+
+    .container {
+        img {
+            filter: brightness(0%) invert(100%); 
+            margin-bottom: 2rem;
+        }
+        nav {
+            @include flex(row, flex-start, space-between);
+
+            li {
+                margin-bottom: 1.5rem;
+                img {
+                    margin-right: 1.5rem;
+                }
+                a {
+                    display: flex;
+                    color: white;
+                    &:hover {
+                        color: $desaturated-blue;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .social {
+                a {
+                    &:not(:first-child) {
+                        margin-left: 1.5rem;
+                    }
+                    &:hover {
+                        opacity: 0.3;
+                        color: $desaturated-blue;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(600px) {
+        padding: 8rem 3rem;
+        .container {
+            nav {
+                flex-direction: column;
+                div {
+                    margin-bottom: 3rem;
+                }
+                .social {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}

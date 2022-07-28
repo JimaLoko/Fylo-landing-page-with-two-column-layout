@@ -1,0 +1,257 @@
+.s-hero {
+    margin-top: 15rem;
+    padding-top: 1.5rem;
+    .container {
+        @include flex(row, center, space-between);
+        h1 {
+            @include title;
+        }
+        p {
+            color: $very-dark-blue;
+            margin-bottom: 3rem;
+            max-width: 58rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        input[type=email] {
+            @include email;
+        }
+        input[type=submit] {
+            @include btn;
+        }
+        
+    }
+    
+    @include responsive(600px){
+        .container {
+            flex-direction: column-reverse;
+            justify-content: center;
+            text-align: center;
+
+            .text {
+                h1 {
+                    font-size: 2.5rem;
+                }
+                p {
+                    font-size: 1.5rem;
+                    max-width: 30.5rem;
+                    margin: 0 auto;
+                    margin-bottom: 3rem;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    input[type=email] {
+                        width: 28rem;
+                    }
+
+                    input[type=submit] {
+                        width: 28rem;
+                        margin: 1.5rem 0 0 0;
+                    }
+                }
+            }
+            .img {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.bg-curve {
+    background: url(../images/bg-curve-desktop.svg) no-repeat center;
+    background-size: cover;
+    padding-top: 12rem;
+    margin-top: 12rem;
+
+    @include responsive(600px){
+            background: url(../images/bg-curve-mobile.svg) no-repeat center;
+            padding-top: 5rem;
+    }
+}
+.s-info {
+    background-color: $light-grayish-Blue;
+
+    .container {
+        @include flex(row, center, space-between);
+        padding-top: 2rem;
+        
+        .text {
+            margin-top: 4rem;
+            h2 {
+                @include title;
+            }
+            p {
+                color: $desaturated-blue;
+                margin-bottom: 3rem;
+                max-width: 58rem;
+                font-size: 1.7rem;
+                font-weight: 700;
+            }
+            a {
+                border-bottom: 1px solid $moderate-Cyan;
+                color: $moderate-Cyan;
+                padding-bottom: 0.5rem;
+                font-size: 2rem;
+                &:hover {
+                    opacity: 0.7;
+                }
+                img {
+                    position: relative;
+                    top: 0.2rem;
+                }
+            }
+        }
+
+        .comment {
+            margin: 5rem 0;
+            background-color: white;
+            border-radius: 5px;
+            padding: 2.5rem 0;
+            max-width: 36rem;
+            display: flex;
+            flex-direction: column;
+            p {
+                margin: 0 auto;
+                font-size: 1.4rem;
+                max-width: 29rem;
+                margin-bottom: 2rem;
+            }
+            img {
+                display: block;
+                height: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .comment-author {
+                width: 29rem;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                img {
+                    height: 4rem;
+                    border-radius: 2rem;
+                    margin-right: 1rem
+                }
+                h3 {
+                    @include title;
+                    margin: 0;
+                    font-size: 1.3rem;
+                    
+                }
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .img {
+            display: flex;
+            justify-content: flex-end;
+            max-width: 45%;
+        }
+    }
+    @include responsive(600px){
+        .container{
+            flex-direction: column-reverse;
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    font-size: 1.8rem;
+                    text-align: center;
+                }
+                p {
+                    font-size: 1.5rem;
+                }
+                a {
+                    font-size: 1.4rem;
+                    margin: 0 auto;
+                }
+            }
+
+            .img {
+                max-width: 100%;
+            }
+
+            .comment {
+                margin: 5rem auto;
+                max-width: 27rem;
+                padding: 2.5rem 2.5rem;
+                p {
+                    font-size: 1rem;
+                    max-width: 22rem;
+                }
+                .comment-author {
+                    width: 23rem;
+                }
+            }
+        }
+    }
+}
+
+.s-get-early-access {
+    background-color: $desaturated-blue;
+    padding: 8rem 0;
+
+    .container {
+        @include flex(row, center, space-between);
+
+        h2 {
+            @include title;
+            color: white;
+            font-size: 3.5rem;
+        }
+
+        p {
+            color: white;
+            max-width: 49rem;
+            font-weight: 400;
+        }
+
+        form {
+            width: 43%;
+            input[type=email] {
+                @include email;
+                width: 90%;
+                margin-bottom: 1.5rem;
+                border: none;
+                box-shadow: 1px 6px 19px 0px rgba(0,0,0,0.52);
+            }
+            input[type=submit] {
+                @include btn;
+                margin: 0;
+            }
+        }
+    }
+
+    @include responsive(600px) {
+        .container {
+            flex-direction: column;
+            text-align: center;
+
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                max-width: 30rem;
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            form {
+                width: 74%;
+
+                input[type=submit] {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

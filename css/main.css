@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  padding: 0 1.5rem;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 9rem;
+  background-color: white;
+}
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container ul {
+  display: flex;
+  align-items: center;
+}
+header .container ul li:not(:first-child) {
+  margin-left: 4rem;
+}
+header .container ul li a {
+  font-family: "Raleway", sans-serif;
+  color: hsl(238deg, 22%, 44%);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+header .container ul li a:hover {
+  font-weight: 700;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.57);
+}
+@media (max-width: 600px) {
+  header img {
+    max-width: 25%;
+  }
+  header .container ul li a {
+    font-size: 1.4rem;
+  }
+}
+
+.s-hero {
+  margin-top: 15rem;
+  padding-top: 1.5rem;
+}
+.s-hero .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.s-hero .container h1 {
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 3rem;
+  color: hsl(243deg, 87%, 12%);
+  font-weight: 700;
+}
+.s-hero .container p {
+  color: hsl(243deg, 87%, 12%);
+  margin-bottom: 3rem;
+  max-width: 58rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.s-hero .container input[type=email] {
+  border: 1px solid hsl(243deg, 87%, 12%);
+  width: 52%;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+.s-hero .container input[type=email]::-moz-placeholder {
+  color: hsl(0deg, 0%, 75%);
+  font-size: 1.4rem;
+}
+.s-hero .container input[type=email]:-ms-input-placeholder {
+  color: hsl(0deg, 0%, 75%);
+  font-size: 1.4rem;
+}
+.s-hero .container input[type=email]::placeholder {
+  color: hsl(0deg, 0%, 75%);
+  font-size: 1.4rem;
+}
+.s-hero .container input[type=email]:invalid {
+  border: 1px solid red;
+}
+.s-hero .container input[type=submit] {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  width: 32%;
+  margin-left: 1.5rem;
+  height: 4.4rem;
+  border-radius: 4px;
+  background-color: hsl(224deg, 93%, 58%);
+  color: white;
+  box-shadow: 1px 6px 19px 0px rgba(0, 0, 0, 0.52);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.s-hero .container input[type=submit]:hover {
+  opacity: 0.7;
+}
+@media (max-width: 600px) {
+  .s-hero .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+  .s-hero .container .text h1 {
+    font-size: 2.5rem;
+  }
+  .s-hero .container .text p {
+    font-size: 1.5rem;
+    max-width: 30.5rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .s-hero .container .text form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .s-hero .container .text form input[type=email] {
+    width: 28rem;
+  }
+  .s-hero .container .text form input[type=submit] {
+    width: 28rem;
+    margin: 1.5rem 0 0 0;
+  }
+  .s-hero .container .img {
+    margin-bottom: 2rem;
+  }
+}
+
+.bg-curve {
+  background: url(../images/bg-curve-desktop.svg) no-repeat center;
+  background-size: cover;
+  padding-top: 12rem;
+  margin-top: 12rem;
+}
+@media (max-width: 600px) {
+  .bg-curve {
+    background: url(../images/bg-curve-mobile.svg) no-repeat center;
+    padding-top: 5rem;
+  }
+}
+
+.s-info {
+  background-color: hsl(240deg, 75%, 98%);
+}
+.s-info .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+.s-info .container .text {
+  margin-top: 4rem;
+}
+.s-info .container .text h2 {
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 3rem;
+  color: hsl(243deg, 87%, 12%);
+  font-weight: 700;
+}
+.s-info .container .text p {
+  color: hsl(238deg, 22%, 44%);
+  margin-bottom: 3rem;
+  max-width: 58rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.s-info .container .text a {
+  border-bottom: 1px solid hsl(170deg, 45%, 43%);
+  color: hsl(170deg, 45%, 43%);
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+}
+.s-info .container .text a:hover {
+  opacity: 0.7;
+}
+.s-info .container .text a img {
+  position: relative;
+  top: 0.2rem;
+}
+.s-info .container .comment {
+  margin: 5rem 0;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2.5rem 0;
+  max-width: 36rem;
+  display: flex;
+  flex-direction: column;
+}
+.s-info .container .comment p {
+  margin: 0 auto;
+  font-size: 1.4rem;
+  max-width: 29rem;
+  margin-bottom: 2rem;
+}
+.s-info .container .comment img {
+  display: block;
+  height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.s-info .container .comment .comment-author {
+  width: 29rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.s-info .container .comment .comment-author img {
+  height: 4rem;
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+.s-info .container .comment .comment-author h3 {
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 3rem;
+  color: hsl(243deg, 87%, 12%);
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.3rem;
+}
+.s-info .container .comment .comment-author p {
+  font-size: 0.9rem;
+}
+.s-info .container .img {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 45%;
+}
+@media (max-width: 600px) {
+  .s-info .container {
+    flex-direction: column-reverse;
+  }
+  .s-info .container .text {
+    display: flex;
+    flex-direction: column;
+  }
+  .s-info .container .text h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .s-info .container .text p {
+    font-size: 1.5rem;
+  }
+  .s-info .container .text a {
+    font-size: 1.4rem;
+    margin: 0 auto;
+  }
+  .s-info .container .img {
+    max-width: 100%;
+  }
+  .s-info .container .comment {
+    margin: 5rem auto;
+    max-width: 27rem;
+    padding: 2.5rem 2.5rem;
+  }
+  .s-info .container .comment p {
+    font-size: 1rem;
+    max-width: 22rem;
+  }
+  .s-info .container .comment .comment-author {
+    width: 23rem;
+  }
+}
+
+.s-get-early-access {
+  background-color: hsl(238deg, 22%, 44%);
+  padding: 8rem 0;
+}
+.s-get-early-access .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.s-get-early-access .container h2 {
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 3rem;
+  color: hsl(243deg, 87%, 12%);
+  font-weight: 700;
+  color: white;
+  font-size: 3.5rem;
+}
+.s-get-early-access .container p {
+  color: white;
+  max-width: 49rem;
+  font-weight: 400;
+}
+.s-get-early-access .container form {
+  width: 43%;
+}
+.s-get-early-access .container form input[type=email] {
+  border: 1px solid hsl(243deg, 87%, 12%);
+  width: 52%;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  width: 90%;
+  margin-bottom: 1.5rem;
+  border: none;
+  box-shadow: 1px 6px 19px 0px rgba(0, 0, 0, 0.52);
+}
+.s-get-early-access .container form input[type=email]::-moz-placeholder {
+  color: hsl(0deg, 0%, 75%);
+  font-size: 1.4rem;
+}
+.s-get-early-access .container form input[type=email]:-ms-input-placeholder {
+  color: hsl(0deg, 0%, 75%);
+  font-size: 1.4rem;
+}
+.s-get-early-access .container form input[type=email]::placeholder {
+  color: hsl(0deg, 0%, 75%);
+  font-size: 1.4rem;
+}
+.s-get-early-access .container form input[type=email]:invalid {
+  border: 1px solid red;
+}
+.s-get-early-access .container form input[type=submit] {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  width: 32%;
+  margin-left: 1.5rem;
+  height: 4.4rem;
+  border-radius: 4px;
+  background-color: hsl(224deg, 93%, 58%);
+  color: white;
+  box-shadow: 1px 6px 19px 0px rgba(0, 0, 0, 0.52);
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 0;
+}
+.s-get-early-access .container form input[type=submit]:hover {
+  opacity: 0.7;
+}
+@media (max-width: 600px) {
+  .s-get-early-access .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .s-get-early-access .container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .s-get-early-access .container p {
+    max-width: 30rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .s-get-early-access .container form {
+    width: 74%;
+  }
+  .s-get-early-access .container form input[type=submit] {
+    width: 90%;
+  }
+}
+
+.footer {
+  background-color: hsl(243deg, 87%, 12%);
+  padding: 8rem 0;
+}
+.footer .container img {
+  filter: brightness(0%) invert(100%);
+  margin-bottom: 2rem;
+}
+.footer .container nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer .container nav li {
+  margin-bottom: 1.5rem;
+}
+.footer .container nav li img {
+  margin-right: 1.5rem;
+}
+.footer .container nav li a {
+  display: flex;
+  color: white;
+}
+.footer .container nav li a:hover {
+  color: hsl(238deg, 22%, 44%);
+  font-weight: 700;
+}
+.footer .container nav .social a:not(:first-child) {
+  margin-left: 1.5rem;
+}
+.footer .container nav .social a:hover {
+  opacity: 0.3;
+  color: hsl(238deg, 22%, 44%);
+}
+@media (max-width: 600px) {
+  .footer {
+    padding: 8rem 3rem;
+  }
+  .footer .container nav {
+    flex-direction: column;
+  }
+  .footer .container nav div {
+    margin-bottom: 3rem;
+  }
+  .footer .container nav .social {
+    align-self: center;
+  }
+}/*# sourceMappingURL=main.css.map */
