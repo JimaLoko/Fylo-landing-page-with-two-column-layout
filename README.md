@@ -36,6 +36,9 @@ Active states
 
 ### Links
 
+- Solution URL: [Fylo landing page with two column layout solution](https://www.frontendmentor.io/solutions/fylo-landing-page-with-two-column-layout-using-scss-fDp3Wj3_Vp)
+- Live Site URL: [GitHub Pages](https://jimaloko.github.io/Fylo-landing-page-with-two-column-layout/)
+
 ## My process
 
 ### Built with
